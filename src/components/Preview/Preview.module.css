@@ -1,0 +1,93 @@
+.PreviewWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100dvh;
+  width: 100%;
+}
+
+.Preview {
+  display: flex;
+  flex-direction: column;
+  column-gap: 1.2rem;
+  width: 100%;
+  min-height: 100%;
+  background-color: rgba(96, 7, 239, 0.3);
+  overflow: hidden;
+}
+
+.Preview .ImgWrapper {
+  height: 200px;
+}
+
+.Preview img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  user-select: none;
+  -webkit-user-drag: none;
+}
+
+.PreviewText {
+  padding: 2rem;
+  color: #fff;
+}
+
+.Name {
+  display: flex;
+  flex-direction: column;
+  column-gap: 20px;
+}
+
+.Name p {
+  font-size: 1.5rem;
+}
+
+.PreviewText h3 {
+  font-size: 3rem;
+}
+
+.PreviewText .Actors {
+  font-size: 2rem;
+  color: rgb(241, 223, 22);
+}
+
+.PreviewText hr {
+  margin-block: 1.5rem;
+}
+
+.PreviewText .Description {
+  font-size: 2rem;
+}
+
+.PreviewText .TimeStart {
+  display: flex;
+  column-gap: 20px;
+  font-size: 2rem;
+}
+
+.TimeStart,
+.Name {
+  flex-direction: column;
+}
+
+@media screen and (min-width: 768px) {
+  .Preview {
+    flex-direction: row;
+    width: 70%;
+    min-height: 50%;
+    border-radius: 20px;
+    border: 2px solid rgb(96, 7, 239);
+  }
+
+  .Preview .ImgWrapper {
+    height: initial;
+    width: 70%;
+  }
+
+  .Name,
+  .TimeStart {
+    flex-direction: row;
+    align-items: center;
+  }
+}

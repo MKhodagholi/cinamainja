@@ -1,0 +1,11 @@
+.Cinema {
+  display: flex;
+  width: 100%;
+  height: 100dvh;
+}
+
+.Video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
